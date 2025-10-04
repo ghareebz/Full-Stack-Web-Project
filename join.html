@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Nasa Official</title>
+	<link rel="stylesheet" href="styles/myStyle.css">
+	<script src="javascript/myScript.js"></script>	
+</head>
+
+<body>
+<img src="images/menu.png" width="30px" onclick="openMenu();">
+<div id="header">
+Nasa Official Website !
+</div>
+<div id="sideMenu">
+<ul>
+<li><a href="#" class="closeBtn" onclick="closeMenu()">&times;</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="join.html">Join Us</a></li>
+<li><a href="important.html">Apollo 11</a></li>
+<li><a href="earth.html">Our Planet</a></li>
+<li><a href="register.php">Register</a></li>
+<li><a href="login.php">Login</a></li>
+</ul>
+</div>
+<div id="menu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="join.html">Join Us</a></li>
+<li><a href="important.html">Apollo 11</a></li>
+<li><a href="earth.html">Our Planet</a></li>
+<li><a href="register.php">Register</a></li>
+<li><a href="login.php">Login</a></li>
+</ul>
+</div>
+<div class=card>
+<div id="centertext">
+<div class="whiteText">
+<h2 class="border">Join NASA — Dream Big!</h2>
+<h3>Think you’ve got the right stuff? Whether you're a future astronaut, mission control genius, or just really love</h3>
+<h3>space snacks — we want to hear from you. Fill out this just-for-fun form and get one step closer to the stars.</h3>
+
+<form name="loginForm">
+<h2>Your Space Identity</h2>
+	<br>
+	<label>E-mail Address:</label>
+	<input type="text" name="userEmail" placeholder="Enter Email">
+	<br>
+	<label>Planet of Residence:</label>
+	<input type="text" name="userPlanet" placeholder="Earth is fine... for now">
+	<br>
+	
+	<h2>Credentials</h2>
+	<label>Age:</label>
+	<input type="number" name="userAge" placeholder="Enter Age">
+	<br>
+	<br>
+	<label>Department:</label>
+	<br>
+	<input type="radio" name="dept" value="cs"><label>Computer Science</label>
+	<br>
+	<input type="radio" name="dept" value="is"><label>Information Systems</label>
+	<br>
+	<input type="radio" name="dept" value="se"><label>Software Engineering</label>
+	<br>
+	<input type="radio" name="dept" value="gm"><label>Multimedia</label>
+	<br>
+	<br>
+	<label>Field of Interest:</label>
+	<br>
+	<input type="checkbox" name="in" value="astro"><label>Astronaut Training</label>
+	<br>
+	<input type="checkbox" name="in" value="space"><label>Space Engineering</label>
+	<br>
+	<input type="checkbox" name="in" value="planet"><label>Planetary Science</label>
+	<br>
+	<input type="checkbox" name="in" value="robot"><label>Robotics & AI</label>
+	<br>
+	<h2>Final Questions</h2>
+	<label>Why do you want to join NASA?</label>
+	<br>
+	<input type="text" name="reason" placeholder="Serious or silly">
+	<br>
+	<label>Your favourite planet:</label>
+	<br>
+	<select>
+		<option>Mercury</option>
+		<option>Venus</option>
+		<option>Earth</option>
+		<option>Mars</option>
+		<option>Jupiter</option>
+		<option>Saturn</option>
+		<option>Uranus</option>
+		<option>Neptune</option>
+	</select>
+	<br>
+	<label>Your space knowledge:</label>
+	<br>
+	<label>Low</label>
+	<input type="range" name="spaceKnowledge" min="1" max="5">
+	<label>High</label>
+	<br>
+	<input type="submit" value="Submit">
+	<input type="reset" value="Clear All">
+	</div>
+	</div>
+	</div>
+	<button><a href="about.html">previous page</a></button>
+	<button><a href="important.html">next page</a></button>
+	
+	
+
+</form>
+</body>
+
+</html>

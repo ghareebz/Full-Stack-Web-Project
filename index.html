@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Nasa Official</title>
+	
+	<link rel="stylesheet" href="styles/myStyle.css">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Text,Website">
+	<meta name="description" content="Text Website">
+	<meta name="viewport" content="width=device-width, initial-scale:1.0">
+	<script src="javascript/myScript.js"></script>
+</head>
+
+<body>
+<img src="images/menu.png" width="30px" onclick="openMenu();">
+<div id="header">
+
+Nasa Official Website !
+
+</div>
+<div id="sideMenu">
+<ul>
+<li><a href="#" class="closeBtn" onclick="closeMenu()">&times;</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="join.html">Join Us</a></li>
+<li><a href="important.html">Apollo 11</a></li>
+<li><a href="earth.html">Our Planet</a></li>
+<li><a href="register.php">Register</a></li>
+<li><a href="login.php">Login</a></li>
+</ul>
+</div>
+
+<div id="menu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="join.html">Join Us</a></li>
+<li><a href="important.html">Apollo 11</a></li>
+<li><a href="earth.html">Our Planet</a></li>
+<li><a href="register.php">Register</a></li>
+<li><a href="login.php">Login</a></li>
+</ul>
+</div>
+<div class ="whiteText">
+<div id="leftColumn">
+<div class="card">
+<div id="slideshow-container">
+<div>
+<img src="images/1.jpg" id="slideshow">
+</div>
+<a class="prev" onclick="prev()">&#10094;</a>
+<a class="next" onclick="next()">&#10095;</a>
+</div>
+<h2> Our Mission </h2>
+<p>At NASA, our mission is to explore the unknown for the benefit of humanity.</p>
+
+<p>We are driven by curiosity and powered by science, innovation, and teamwork.</p>
+ <p>From launching satellites that study Earth’s climate to sending spacecraft beyond our solar system,</p>
+ <p>every mission is a step forward in our journey to understand the universe and our place within it.</p>
+ <p>NASA is not just about rockets and astronauts. It’s about discovery, imagination, and building a future where</p>
+ <p>anything is possible. We’re here to go farther, reach higher, and achieve more—together.</p>
+ </div>
+ </div>
+ <div class="card">
+ <h2>Astronomy Picture of the Day</h2>
+ <img src="images/astro3.jpg" width="400">
+ </div>
+ </div>
+ <div id="footer">
+ <button><a href="about.html">next page</a></button>
+ </div>
+ </div>
+ <button id="backToTopBtn" title="Go to top">↑</button>
+
+ <input type="button" value="click here" onclick="msg()">
+ <script>
+ function msg(){
+ var name = prompt("enter your name");
+ alert("Welcome "+name);
+ }
+ </script>
+ <script>
+  // Show the button after scrolling down 100px
+  window.onscroll = function() {
+    const btn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Scroll to top when the button is clicked
+  document.getElementById("backToTopBtn").addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+
+</html>

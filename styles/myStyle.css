@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+
+body {
+	background-color: #000000;
+	font-family: Verdana;
+	font-size: 14px;
+}
+.whiteText {
+	color: white;
+	font-family: calibri;
+}
+.border{
+	text-align:center;
+	border: solid;
+	width:80%;
+	margin:auto;
+	margin-top: 50px;
+	
+}
+#header {
+	background: #0E2148;
+	text-align: center;
+	margin: auto;
+	font-size: 200%;
+	font-weight:bold;
+	padding: 30px;
+	border-radius: 10px;
+	color: white;
+}
+#menu ul {
+	background: #483AA0;
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	list-style-type: none;
+	font-size: 130%;
+}
+#menu ul li{
+	display: inline;
+}
+#menu ul li a{
+	color: white;
+	text-decoration: none;
+	padding-left: 30px;
+	padding-right: 30px;
+	transition: 0.5s;
+}
+#menu ul li a:hover{
+	background-color: white;
+	color: black;
+	border-radius: 10px;
+	font-size: 140%;
+	transition: 0.5s;
+}
+#footer {
+	background: #000000;
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 10px;
+	color: white;
+	clear: both;
+}
+
+#centertext{
+	display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+
+}
+
+.card{
+	background: #7965C1;
+	padding: 20px;
+	margin-top: 10px;
+	border-radius: 20px;
+	
+}
+
+.card img{
+	border-radius: 10px;
+	width: 100%;
+}
+
+h1 {
+	font-size : 120%;
+}
+
+media screen and (max-width:800px){
+	#leftColumn{
+		width: 100%;
+	}
+	#rightColumn{
+		width: 100%;
+	}
+}
+
+#sideMenu{
+	background: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0px;
+	overflow-x: hidden;
+	transition: 0.3s;
+}
+#sideMenu ul li{
+	list-style-type: none;
+	padding-bottom: 10px;
+}
+
+#sideMenu ul li a{
+	color: gray;
+	text-decoration: none;
+	font-size: 28px;
+	transition: 0.3s;
+}
+#sideMenu ul li a:hover{
+	color: white;
+	transition: 0.3s;
+}
+
+.closeBtn{
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+
+#slideshow-container{
+	width: 80%;
+	margin: auto;
+	position: relative;
+}
+
+#slideshow-container img{
+	width: 100%;
+	margin: auto;
+}
+.prev , .next {
+	position: absolute;
+	top: 50%;
+	color: white;
+	font-size:30px;
+	margin-top: -10px;
+	padding: 10px;
+}
+
+.next{
+	right: 0;
+}
+
+.prev:hover , .next:hover {
+	background: black;
+	border-radius: 10px;
+	opacity: 0.8;
+}
+
